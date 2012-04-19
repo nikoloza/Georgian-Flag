@@ -1,0 +1,101 @@
+#georgianFlag {
+   width:600px;
+   height:450px;
+   border:1px solid gray;
+   position: relative;
+   margin: 0 auto;
+   background:white;
+
+   -webkit-border-radius: 16px;
+   -moz-border-radius: 16px;
+   border-radius: 16px;
+}
+
+.horizontal {
+   width:600px;
+   height:60px;
+   background: red;
+   position: absolute;
+   top:195px;
+}
+.vertical {
+   width:60px;
+   height:450px;
+   background: red;
+   position: absolute;
+   left:270px;
+}
+
+.crosscont {
+   width:120px;
+   height:120px;
+   position: absolute;
+   border:1px dashed transparent;
+}
+.crosscont.left {
+   left:60px;
+}
+.crosscont.top {
+   top:30px;
+}
+.crosscont.right {
+   right:60px;
+}
+.crosscont.bottom {
+   bottom:30px;
+}
+
+.cross {
+   width:40px;
+   height:40px;
+   top:40px;
+   background: red;
+   position: absolute;
+}
+
+.cross:after {
+   content:"";
+   width:40px;
+   height:8px;
+   border-radius: 0 0 10px 300px / 0 0 10px 100px;
+   position: absolute;
+   top:0px;
+   background-color:white;
+}
+.cross:before {
+   content:"";
+   width:40px;
+   height:8px;
+   border-radius: 300px 10px 0 0 / 100px 10px 0 0;
+   position: absolute;
+   bottom:0px;
+   background-color:white;
+}
+
+.cross.rotated {
+   -webkit-transform-origin: 60px 20px;
+}
+
+.cross.rotated.top {
+   -webkit-transform:rotate(90deg);
+}
+
+.cross.rotated.right {
+   -webkit-transform:rotate(180deg);
+}
+
+.cross.rotated.bottom {
+   -webkit-transform:rotate(270deg);
+}
+
+.crosscont .center {
+   width:40px;
+   height:24px;
+   background: red;
+   position: absolute;
+   left:40px;
+   top:48px;
+}
+.crosscont .center.y {
+   -webkit-transform:rotate(90deg);
+}
